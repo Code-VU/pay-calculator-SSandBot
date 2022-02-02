@@ -7,10 +7,9 @@ def calculatePay():
     float(hrs)
     rate = input("Enter Rate:")
     float(rate)
-    if float(hrs) <= 40: 
-        regpay = float(hrs) * float(rate)
-        pay = regpay
-    elif float(hrs) > 40:
+        if float(hrs) <= 40: 
+        regpay = float(hrs*rate)
+        elif float(hrs) > 40:
         pay = (float(hrs)*rate) + (float(hrs)-40*(rate)*1.5)  
     print ("Pay: ",pay)
        # end assignment
