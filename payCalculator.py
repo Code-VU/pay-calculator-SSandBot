@@ -3,11 +3,11 @@ def calculatePay():
 # Implement your solution in between the two comment blocks
     print("calculating pay")
     # This first line is provided for you
-    hrs = input("Enter Hours: ")
+    hrs = input("Enter Hours:")
     float(hrs)
-    rate = input("Enter Rate: ")
+    rate = input("Enter Rate:")
     float(rate)
-    if input (hrs) <= 40: 
+    if float(hrs) <= 40: 
         regpay = float(hrs) * float(rate)
         pay = regpay
     elif float(hrs) > 40:
