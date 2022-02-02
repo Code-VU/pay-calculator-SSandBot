@@ -12,7 +12,7 @@ def calculatePay():
         pay = regpay
     elif float(hrs) > 40:
         pay = (float(hrs)*rate) + (float(hrs)-40*(rate)*1.5)  
-    print ("Pay: ", pay)
+    print ("Pay: ",pay)
        # end assignment
 
 ## if you want to test locally before you try to sync
