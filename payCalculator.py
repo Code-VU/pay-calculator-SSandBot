@@ -1,18 +1,17 @@
+# from platform import python_branch
 def calculatePay():
-    # Implement your solution in between the two comment blocks
+# Implement your solution in between the two comment blocks
     print("calculating pay")
     # This first line is provided for you
     hrs = input("Enter Hours: ")
     float(hrs)
     rate = input("Enter Rate: ")
     float(rate)
-    if float(hrs) <= 40 :
+    if input (hrs) <= 40: 
         regpay = float(hrs) * float(rate)
         pay = regpay
-    if float(hrs) > 40 :
-        otpay = (float(hrs)-40) * (float(rate)*1.5)  
-        regpay = 40*float(rate)
-        pay = regpay + otpay
+    elif float(hrs) > 40:
+        pay = (float(hrs)*rate) + (float(hrs)-40*(rate)*1.5)  
     print ("Pay: ", pay)
        # end assignment
 
