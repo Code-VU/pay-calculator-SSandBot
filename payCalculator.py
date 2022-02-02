@@ -7,12 +7,12 @@ def calculatePay():
     float(hrs)
     rate = input("Enter Rate:")
     float(rate)
-        if float(hrs) <= 40: 
-        regpay = float(hrs*rate)
-        elif float(hrs) > 40:
+    if float(hrs) <= 40 : 
+        pay = float(hrs*rate)
+    elif float(hrs) > 40:
         pay = (float(hrs)*rate) + (float(hrs)-40*(rate)*1.5)  
     print ("Pay: ",pay)
-       # end assignment
+# end assignment
 
 ## if you want to test locally before you try to sync
 ## uncomment calculatePay() and run > python payCalculator.py
