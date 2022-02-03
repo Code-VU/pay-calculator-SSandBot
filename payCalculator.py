@@ -5,14 +5,16 @@ def calculatePay ():
     # This first line is provided for you
     hrs = input("Enter Hours: ")
     float(hrs)
-    rate = input("Enter Rate: ")
-    float(rate)
+    rts = input("Enter Rate: ")
+    float(rts)
+    h=float(hrs)
     
-    if float(hrs) <= 40 : 
-        pay = float(hrs*rate)
-    if float(hrs) > 40 :
-        pay = (40* rate) + (hrs-40) * (rate*1.5)
-
+    if h<=40: 
+        pay = h*float(rts)
+    else:
+        hnew=h-40
+        pay = (40*float(rts)) + (float(hnew) * (float(rts)*1.5))
+   
     print ("Pay: ",pay)
 # end assignment
 
