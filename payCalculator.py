@@ -8,13 +8,9 @@ def calculatePay ():
     rts = input("Enter Rate: ")
     float(rts)
     h=float(hrs)
-    
     if h<=40: 
         pay = h*float(rts)
-    else:
-        hnew=h-40
-        pay = (40*float(rts)) + (float(hnew) * (float(rts)*1.5))
-   
+           
     print ("Pay: ",pay)
 # end assignment
 
